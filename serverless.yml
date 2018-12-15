@@ -1,0 +1,35 @@
+service:
+  name: gcf-nodejs-typescript
+
+plugins:
+  - serverless-webpack
+  - serverless-google-cloudfunctions
+
+provider:
+  name: google
+  runtime: nodejs8
+  project: ${env:GCP_PROJECT_ID}
+  credentials: ${env:GOOGLE_APPLICATION_CREDENTIALS}
+
+functions:
+  # HTTP trigger sample
+  # hello_world:
+  #   handler: helloWorld
+  #   events:
+  #     - http: path
+
+  # Pub/Sub trigger sample
+  # pubsub_trigger_func:
+  #   handler: helloPubSub
+  #   events:
+  #     - event:
+  #         eventType: providers/cloud.pubsub/eventTypes/topic.publish
+  #         resource: projects/<PROJECT_ID>/topics/<TOPIC>
+  #
+  # Google Cloud Storage trigger sample
+  # storage_trigger_func:
+  #   handler: helloStorage
+  #   events:
+  #     - event:
+  #         eventType: google.storage.object.finalize
+  #         resource: projects/<PROJECT_ID>/buckets/<BUCKET>

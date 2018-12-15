@@ -1,0 +1,21 @@
+{
+  "name": "gcf-nodejs-typescript",
+  "version": "0.0.1",
+  "description": "Serverless webpack example using Typescript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.12"
+  },
+  "devDependencies": {
+    "serverless-webpack": "^5.1.1",
+    "serverless-google-cloudfunctions": "^2.3.2",
+    "source-map-support": "^0.5.6",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.2",
+    "webpack": "^4.5.0"
+  },
+  "author": "kurikei@gmail.com",
+  "license": "MIT"
+}
